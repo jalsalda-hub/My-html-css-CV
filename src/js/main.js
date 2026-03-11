@@ -84,3 +84,34 @@ const savedTheme = localStorage.getItem('theme') || 'light';
 document.documentElement.setAttribute('data-theme', savedTheme);
 updateThemeIcon(savedTheme);
 
+// Navigation Active State Observer
+const observerOptions = {
+    root: null,
+    rootMargin: '-20% 0px -50% 0px', // Trigger when section is near middle of viewport
+    threshold: 0
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Remove active class from all links
+            document.querySelectorAll('nav a').forEach(link => {
+                link.classList.remove('active');
+                link.removeAttribute('aria-current');
+            });
+            
+            // Add active class to current section link
+            const activeLink = document.querySelector(`nav a[href="#${entry.target.id}"]`);
+            if (activeLink) {
+                activeLink.classList.add('active');
+                activeLink.setAttribute('aria-current', 'page');
+            }
+        }
+    });
+}, observerOptions);
+
+// Observe all sections that have nav links
+document.querySelectorAll('section[id]').forEach(section => {
+    observer.observe(section);
+});
+
