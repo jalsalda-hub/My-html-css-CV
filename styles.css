@@ -1,0 +1,124 @@
+/* 
+   Hoja de estilos basada en estándares MDN y web.dev 
+   Selectores Básicos de CSS
+*/
+
+/* =========================================
+   1. Selectores de Tipo (Type Selectors)
+   Afectan a todas las instancias del elemento HTML
+   ========================================= */
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+ul {
+    list-style: none; /* Elimina los bullets por defecto */
+    padding: 0;
+}
+
+/* =========================================
+   2. Selectores de Clase (Class Selectors)
+   Afectan a elementos con el atributo class="..."
+   ========================================= */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e1e4e8;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* =========================================
+   3. Selectores de ID (ID Selectors)
+   Afectan a un ÚNICO elemento con id="..."
+   ========================================= */
+
+#hero {
+    background-color: #2c3e50;
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+#hero h1 {
+    color: white; /* Sobrescribe el color general de h1 solo para #hero */
+    font-size: 2.5rem;
+}
+
+#contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+#main-nav {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* =========================================
+   4. Selectores Descendientes (Descendant Selectors)
+   Selecciona elementos dentro de otros
+   ========================================= */
+
+nav ul li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #666;
+}
