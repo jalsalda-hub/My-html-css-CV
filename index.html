@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio FullStack & Industrial Expert. Desarrollo web, consultoría en procesos industriales y logística.">
+    <title>Ingeniero & Developer FullStack | Portafolio</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="src/css/main.css">
+    
+    <!-- FontAwesome (Optional, using CDN for now) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem;">
+            <div class="logo">
+                <h1 style="font-size: 1.5rem; margin: 0;">Dev<span style="color: var(--secondary-color);">Industrial</span></h1>
+            </div>
+            <nav>
+                <ul style="display: flex; list-style: none; gap: 1rem;">
+                    <li><a href="#hero" data-i18n="nav_home">Inicio</a></li>
+                    <li><a href="#about" data-i18n="nav_about">Sobre Mí</a></li>
+                    <li><a href="#services" data-i18n="nav_services">Servicios</a></li>
+                    <li><a href="#projects" data-i18n="nav_projects">Proyectos</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="controls">
+                <button id="theme-toggle" class="btn" style="background: transparent; color: var(--text-primary); border: 1px solid var(--border-color);">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <select id="lang-select" style="padding: 0.5rem;">
+                    <option value="es">ES</option>
+                    <option value="en">EN</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero">
+            <div class="container">
+                <h1 data-i18n="hero_title">Ingeniería Industrial + Desarrollo FullStack</h1>
+                <p data-i18n="hero_subtitle">Optimizando procesos de manufactura y logística a través de soluciones tecnológicas modernas.</p>
+                <a href="#projects" class="btn" data-i18n="hero_cta">Ver Casos de Estudio</a>
+                <a href="src/assets/documents/cv.pdf" class="btn" style="background-color: transparent; border: 2px solid var(--secondary-color); color: var(--text-primary); margin-left: 1rem;" download>
+                    <i class="fas fa-file-download"></i> CV
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" style="background-color: var(--surface-color);">
+            <div class="container">
+                <h2 data-i18n="about_title">Sobre Mí</h2>
+                <div class="about-content">
+                    <p data-i18n="about_text">Experto en la intersección de la tecnología y la industria. Aporto una visión única que combina metodologías de desarrollo de software con principios de Lean Manufacturing y Supply Chain Management.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <div class="container">
+                <h2 data-i18n="services_title">Servicios</h2>
+                <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+                    <div class="card" style="padding: 1rem; border: 1px solid var(--border-color); border-radius: 4px;">
+                        <h3 data-i18n="service_1_title">Consultoría Tecnológica Industrial</h3>
+                        <p data-i18n="service_1_desc">Digitalización de procesos productivos.</p>
+                    </div>
+                    <div class="card" style="padding: 1rem; border: 1px solid var(--border-color); border-radius: 4px;">
+                        <h3 data-i18n="service_2_title">Desarrollo FullStack</h3>
+                        <p data-i18n="service_2_desc">Aplicaciones web a medida para logística y ecommerce.</p>
+                    </div>
+                    <div class="card" style="padding: 1rem; border: 1px solid var(--border-color); border-radius: 4px;">
+                        <h3 data-i18n="service_3_title">Optimización Ecommerce</h3>
+                        <p data-i18n="service_3_desc">Estrategias de venta online y marketing digital técnico.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" style="background-color: var(--surface-color);">
+            <div class="container">
+                <h2 data-i18n="projects_title">Casos de Estudio</h2>
+                <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <!-- Project 1 -->
+                    <div class="card" style="padding: 1.5rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--background-color);">
+                        <h3 data-i18n="project_1_title">Consultor Sr. en Supply Chain/Operaciones</h3>
+                        <p data-i18n="project_1_desc" style="margin-top: 1rem;">Diseño de la red de distribución...</p>
+                        <a href="#" class="btn" style="margin-top: 1rem; font-size: 0.8rem;">Ver Detalles</a>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="card" style="padding: 1.5rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--background-color);">
+                        <h3 data-i18n="project_2_title">Director de Logística | Supply Chain Manager</h3>
+                        <p data-i18n="project_2_desc" style="margin-top: 1rem;">Reconocido por NetLogistik...</p>
+                        <a href="#" class="btn" style="margin-top: 1rem; font-size: 0.8rem;">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog">
+            <div class="container">
+                <h2 data-i18n="blog_title">Blog Técnico</h2>
+                <div class="blog-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                    <article class="card">
+                        <h3>Optimización de la Cadena de Suministro con IA</h3>
+                        <p style="margin: 1rem 0;">Cómo la inteligencia artificial está transformando la predicción de demanda en manufactura.</p>
+                        <a href="#" style="color: var(--secondary-color); font-weight: bold;">Leer más &rarr;</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2 data-i18n="contact_title">Contacto</h2>
+                <form id="contact-form" style="max-width: 600px; margin: 0 auto;">
+                    <div style="margin-bottom: 1rem;">
+                        <label for="name" data-i18n="contact_name">Nombre</label>
+                        <input type="text" id="name" name="name" style="width: 100%; padding: 0.5rem; margin-top: 0.5rem;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="email" data-i18n="contact_email">Email</label>
+                        <input type="email" id="email" name="email" style="width: 100%; padding: 0.5rem; margin-top: 0.5rem;">
+                    </div>
+                    <div style="margin-bottom: 1rem;">
+                        <label for="message" data-i18n="contact_message">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" style="width: 100%; padding: 0.5rem; margin-top: 0.5rem;"></textarea>
+                    </div>
+                    <button type="submit" class="btn" data-i18n="contact_submit">Enviar Mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer style="background-color: var(--primary-color); color: #fff; padding: 2rem 0; text-align: center;">
+        <div class="container">
+            <p>&copy; 2026 DevIndustrial. Todos los derechos reservados.</p>
+            <div class="social-links" style="margin-top: 1rem;">
+                <a href="#" style="color: #fff; margin: 0 0.5rem;"><i class="fab fa-linkedin"></i></a>
+                <a href="#" style="color: #fff; margin: 0 0.5rem;"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="src/js/main.js"></script>
+</body>
+</html>

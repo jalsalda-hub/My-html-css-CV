@@ -1,0 +1,41 @@
+:root {
+    /* Colors - Light Mode (Default) */
+    --primary-color: #2c3e50;
+    --secondary-color: #e67e22;
+    --background-color: #f8f9fa;
+    --surface-color: #ffffff;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --border-color: #dddddd;
+
+    /* Typography */
+    --font-heading: 'Montserrat', 'Roboto Slab', sans-serif;
+    --font-body: 'Open Sans', 'Inter', sans-serif;
+    --font-code: 'Fira Code', monospace;
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+
+    /* Layout */
+    --container-width: 1200px;
+    --border-radius: 4px; /* Industrial feel - slight round */
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition-speed: 0.3s;
+}
+
+/* Dark Mode Override */
+[data-theme="dark"] {
+    --primary-color: #ecf0f1; /* Light text for headings/primary in dark mode */
+    --primary-bg: #34495e; /* Use for cards/surfaces */
+    --secondary-color: #d35400;
+    --background-color: #1a1a1a;
+    --surface-color: #2c3e50;
+    --text-primary: #ecf0f1;
+    --text-secondary: #bdc3c7;
+    --border-color: #444444;
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
