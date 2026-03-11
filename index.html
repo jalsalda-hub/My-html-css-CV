@@ -74,10 +74,31 @@
                         <span class="skill-tag">Process Optimization</span>
                         <span class="skill-tag">Web Development</span>
                     </div>
+                    <div class="social-links-area" style="margin-top: 1.5rem;">
+                        <a href="https://www.linkedin.com/in/jaimelondonos/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile of Jaime Londoño">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/jalsalda-hub/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub Profile of jalsalda-hub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="about-visual">
-                    <div class="profile-placeholder">
-                        <i class="fas fa-user-tie"></i>
+                    <div class="profile-image-container">
+                        <!-- Best Practice: Modern Image Formats + Fallback + Aspect Ratio -->
+                        <picture>
+                            <!-- Removing webp source for now as we only have jpg -->
+                            <!-- <source srcset="src/assets/images/profile.webp" type="image/webp"> -->
+                            <img 
+                                src="src/assets/images/profile 2.jpg" 
+                                alt="Jaime Londoño - FullStack Developer & Industrial Engineer"
+                                class="profile-img"
+                                loading="lazy"
+                                width="400"
+                                height="400"
+                                onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'profile-placeholder\'><i class=\'fas fa-user-tie\'></i></div>';"
+                            >
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -193,8 +214,8 @@
         <div class="container">
             <p>&copy; 2026 DevIndustrial. Todos los derechos reservados.</p>
             <div class="social-links" style="margin-top: 1rem;">
-                <a href="#" style="color: #fff; margin: 0 0.5rem;"><i class="fab fa-linkedin"></i></a>
-                <a href="#" style="color: #fff; margin: 0 0.5rem;"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jaimelondonos/" target="_blank" rel="noopener noreferrer" style="color: #fff; margin: 0 0.5rem; font-size: 1.5rem;" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/jalsalda-hub/" target="_blank" rel="noopener noreferrer" style="color: #fff; margin: 0 0.5rem; font-size: 1.5rem;" aria-label="GitHub"><i class="fab fa-github"></i></a>
             </div>
         </div>
     </footer>

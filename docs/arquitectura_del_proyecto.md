@@ -11,19 +11,13 @@
 │   └── teck_stack.md
 ├── src/                    # Código fuente
 │   ├── assets/             # Recursos estáticos
-│   │   ├── images/         # Imágenes optimizadas (webp, svg)
-│   │   ├── icons/          # Iconos SVG
-│   │   └── documents/      # CV en PDF
+│   │   ├── documents/      # CV en PDF
 │   ├── css/                # Hojas de estilo
-│   │   ├── main.css        # Importador principal y reset
-│   │   ├── variables.css   # Definición de tokens de diseño (colores, fuentes)
-│   │   ├── layout.css      # Estructura general
-│   │   ├── components/     # Estilos específicos de componentes (botones, cards)
-│   │   └── sections/       # Estilos específicos por sección
+│   │   ├── main.css        # Estilos principales (Layout, Componentes, Utilidades)
+│   │   └── variables.css   # Tokens de diseño y temas
 │   └── js/                 # Scripts
-│       ├── main.js         # Entrada principal
-│       ├── i18n.js         # Módulo de internacionalización
-│       └── ui.js           # Manejo de interfaz (tema, menú móvil)
+│       ├── main.js         # Lógica principal (UI, Eventos, Tema)
+│       └── i18n.js         # Diccionario de traducciones
 ├── index.html              # Punto de entrada único
 └── README.md               # Documentación general y estado
 ```
@@ -36,4 +30,5 @@
 
 2.  **Tema (Dark/Light):**
     - Se usará `localStorage` para persistir la preferencia.
-    - Se aplicará una clase `.dark-mode` al `<body>` o se cambiarán los valores de las variables CSS raíz.
+    - Se aplica el atributo `data-theme="dark"` o `light` en la etiqueta `<html>`.
+    - CSS Variables en `variables.css` responden a este atributo.

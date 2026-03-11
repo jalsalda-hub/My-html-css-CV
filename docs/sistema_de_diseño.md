@@ -28,6 +28,19 @@
 - Sistema de **Grid de 4/8/12 columnas** según viewport.
 - Espaciado base (rem): `0.25rem` (4px), `0.5rem` (8px), `1rem` (16px), `2rem` (32px).
 
+## Patronaje y Texturas
+- **Fondo Hero:** `radial-gradient` sutil para profundidad.
+- **Patrón Industrial:** Superposición de cuadrícula (Grid) css-pure en el hero para evocar planos técnicos/ingeniería (`40px` size).
+
 ## Componentes Clave
-- **Botones:** Rectangulares con bordes ligeramente redondeados (2px), sombra sutil en hover. Estilo "botonería de maquinaria".
-- **Cards de Proyectos:** Diseño "Blueprint" o "Ficha Técnica". Bordes definidos, información estructurada.
+- **Botones:**
+  - `btn-primary`: Sólido, naranja industrial.
+  - `btn-outline`: Bordeado, transparente, para acciones secundarias.
+- **Badges:**
+  - `hero-badge`: Indicador de perfil dual (pill shape).
+  - `skill-tags`: Etiquetas pequeñas para listar habilidades técnicas.
+- **Cards de Proyectos (Rediseñado):**
+  - Estructura `<article>` semántica.
+  - **Header:** Icono + Categoría.
+  - **Footer:** Tags de tecnologías + Enlace de acción.
+  - Efecto de elevación en hover.
