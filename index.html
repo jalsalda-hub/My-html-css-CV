@@ -47,22 +47,38 @@
     <main>
         <!-- Hero Section -->
         <section id="hero">
-            <div class="container">
-                <h1 data-i18n="hero_title">Ingeniería Industrial + Desarrollo FullStack</h1>
-                <p data-i18n="hero_subtitle">Optimizando procesos de manufactura y logística a través de soluciones tecnológicas modernas.</p>
-                <a href="#projects" class="btn" data-i18n="hero_cta">Ver Casos de Estudio</a>
-                <a href="src/assets/documents/cv.pdf" class="btn" style="background-color: transparent; border: 2px solid var(--secondary-color); color: var(--text-primary); margin-left: 1rem;" download>
-                    <i class="fas fa-file-download"></i> CV
-                </a>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="hero-badge">FullStack + Supply Chain</span>
+                    <h1 data-i18n="hero_title">Ingeniería Industrial + Desarrollo FullStack</h1>
+                    <p data-i18n="hero_subtitle">Optimizando procesos de manufactura y logística a través de soluciones tecnológicas modernas.</p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary" data-i18n="hero_cta">Ver Casos de Estudio</a>
+                        <a href="src/assets/documents/cv.pdf" class="btn btn-outline" download>
+                            <i class="fas fa-file-download"></i> CV
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- About Section -->
         <section id="about" style="background-color: var(--surface-color);">
-            <div class="container">
-                <h2 data-i18n="about_title">Sobre Mí</h2>
-                <div class="about-content">
-                    <p data-i18n="about_text">Experto en la intersección de la tecnología y la industria. Aporto una visión única que combina metodologías de desarrollo de software con principios de Lean Manufacturing y Supply Chain Management.</p>
+            <div class="container about-container">
+                <div class="about-text">
+                    <h2 data-i18n="about_title">Sobre Mí</h2>
+                    <p data-i18n="about_text" class="lead-text">Experto en la intersección de la tecnología y la industria. Aporto una visión única que combina metodologías de desarrollo de software con principios de Lean Manufacturing y Supply Chain Management.</p>
+                    <div class="skills-list">
+                        <span class="skill-tag">Supply Chain</span>
+                        <span class="skill-tag">Logistics</span>
+                        <span class="skill-tag">Process Optimization</span>
+                        <span class="skill-tag">Web Development</span>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="profile-placeholder">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
                 </div>
             </div>
         </section>
@@ -92,19 +108,46 @@
         <section id="projects" style="background-color: var(--surface-color);">
             <div class="container">
                 <h2 data-i18n="projects_title">Casos de Estudio</h2>
-                <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="projects-grid">
                     <!-- Project 1 -->
-                    <div class="card" style="padding: 1.5rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--background-color);">
-                        <h3 data-i18n="project_1_title">Consultor Sr. en Supply Chain/Operaciones</h3>
-                        <p data-i18n="project_1_desc" style="margin-top: 1rem;">Diseño de la red de distribución...</p>
-                        <a href="#" class="btn" style="margin-top: 1rem; font-size: 0.8rem;">Ver Detalles</a>
-                    </div>
+                    <article class="card project-card">
+                        <div class="card-header">
+                            <div class="project-icon"><i class="fas fa-network-wired"></i></div>
+                            <span class="project-category">Supply Chain</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 data-i18n="project_1_title">Consultor Sr. en Supply Chain/Operaciones</h3>
+                            <p data-i18n="project_1_desc">Diseño de la red de distribución...</p>
+                        </div>
+                        <div class="card-footer">
+                            <ul class="tech-tags">
+                                <li>Network Design</li>
+                                <li>Logistics</li>
+                                <li>Cost Optimization</li>
+                            </ul>
+                            <a href="#" class="btn-link">Ver Detalles &rarr;</a>
+                        </div>
+                    </article>
+                    
                     <!-- Project 2 -->
-                    <div class="card" style="padding: 1.5rem; border: 1px solid var(--border-color); border-radius: 4px; background-color: var(--background-color);">
-                        <h3 data-i18n="project_2_title">Director de Logística | Supply Chain Manager</h3>
-                        <p data-i18n="project_2_desc" style="margin-top: 1rem;">Reconocido por NetLogistik...</p>
-                        <a href="#" class="btn" style="margin-top: 1rem; font-size: 0.8rem;">Ver Detalles</a>
-                    </div>
+                    <article class="card project-card">
+                         <div class="card-header">
+                            <div class="project-icon"><i class="fas fa-robot"></i></div>
+                            <span class="project-category">Automation</span>
+                        </div>
+                        <div class="card-body">
+                            <h3 data-i18n="project_2_title">Director de Logística | Supply Chain Manager</h3>
+                            <p data-i18n="project_2_desc">Reconocido por NetLogistik...</p>
+                        </div>
+                        <div class="card-footer">
+                            <ul class="tech-tags">
+                                <li>AI/ML</li>
+                                <li>S&OP</li>
+                                <li>Automation</li>
+                            </ul>
+                            <a href="#" class="btn-link">Ver Detalles &rarr;</a>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
