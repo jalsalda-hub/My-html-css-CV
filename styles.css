@@ -17,21 +17,40 @@ body {
     background-color: #f4f4f9;
 }
 
-h1, h2, h3 {
+/* Selector de Tipo: h1 (Encabezado principal) */
+h1 {
     font-family: 'Montserrat', sans-serif;
-    color: #2c3e50;
+    font-size: 3rem;       /* Tamaño más grande */
+    color: #1a252f;        /* Color oscuro y profesional */
+    margin-bottom: 1.5rem;
+}
+
+/* Selector de Tipo: h2, h3 (Subtítulos) */
+h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #34495e;
     margin-bottom: 1rem;
 }
 
+/* Selector de Tipo: p (Párrafos) */
 p {
+    font-size: 1.125rem;   /* Tamaño específico (18px) para lectura cómoda */
+    color: #4a4a4a;        /* Color gris oscuro para reducir fatiga visual */
+    line-height: 1.7;      /* Espaciado para legibilidad */
     margin-bottom: 1.5rem;
-    font-size: 1rem;
 }
 
+/* Selector de Tipo: a (Enlaces) */
 a {
-    color: #007bff;
-    text-decoration: none;
-    transition: color 0.3s ease;
+    color: #2980b9;        /* Color azul "Industrial" diferente al texto */
+    text-decoration: none; /* Sin subrayado por defecto */
+    font-weight: 600;      /* Texto más grueso */
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #e74c3c;        /* Cambio de color al pasar el mouse */
+    text-decoration: underline;
 }
 
 ul {
