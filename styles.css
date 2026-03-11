@@ -3,6 +3,11 @@
    Selectores Básicos de CSS
 */
 
+/* Box Model Reset */
+* {
+    box-sizing: border-box;
+}
+
 /* =========================================
    1. Selectores de Tipo (Type Selectors)
    Afectan a todas las instancias del elemento HTML
@@ -62,6 +67,13 @@ ul {
    2. Selectores de Clase (Class Selectors)
    Afectan a elementos con el atributo class="..."
    ========================================= */
+
+.section {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
 
 .container {
     max-width: 1200px;
