@@ -1,6 +1,5 @@
 /* 
-   Hoja de estilos basada en estándares MDN y web.dev 
-   Selectores Básicos de CSS
+   Hoja de estilos - Tema Tecnológico & Profesional
 */
 
 /* Box Model Reset */
@@ -10,88 +9,87 @@
 
 /* =========================================
    1. Selectores de Tipo (Type Selectors)
-   Afectan a todas las instancias del elemento HTML
    ========================================= */
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f5f6fa; /* Fondo gris muy claro/azulado */
+    color: #2f3640;            /* Texto principal gris oscuro */
     line-height: 1.6;
+    margin: 0;
 }
 
 header {
-    background-color: #2c3e50;
-    color: white;
+    background-color: #2f3640; /* Dark Gunmetal */
+    color: #f5f6fa;
     padding: 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 footer {
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px;
+    background-color: #2f3640;
+    color: #7f8fa6; /* Texto gris suave */
+    padding: 40px 20px;
     text-align: center;
 }
 
-/* Selector de Tipo: h1 (Encabezado principal) */
+/* Encabezados */
 h1 {
     font-family: 'Montserrat', sans-serif;
-    font-size: 3rem;       /* Tamaño más grande */
-    color: #1a252f;        /* Color oscuro y profesional */
+    font-size: 3rem;
+    color: #2f3640;
     margin-bottom: 1.5rem;
+    letter-spacing: -1px;
 }
 
-/* Selector de Tipo: h2, h3 (Subtítulos) */
 h2, h3 {
     font-family: 'Montserrat', sans-serif;
-    color: #34495e;
+    color: #192a56; /* Azul marino profundo */
     margin-bottom: 1rem;
 }
 
-/* Selector de Tipo: p (Párrafos) */
+/* Párrafos */
 p {
-    font-size: 1.125rem;   /* Tamaño específico (18px) para lectura cómoda */
-    color: #4a4a4a;        /* Color gris oscuro para reducir fatiga visual */
-    line-height: 1.7;      /* Espaciado para legibilidad */
+    font-size: 1.125rem;
+    color: #576574; /* Gris medio para lectura */
+    line-height: 1.8;
     margin-bottom: 1.5rem;
 }
 
-/* Selector de Tipo: a (Enlaces) */
+/* Enlaces */
 a {
-    color: #3498db;        /* Color azul brillante */
-    text-decoration: none; /* Sin subrayado por defecto */
-    font-weight: 600;      /* Texto más grueso */
-    transition: color 0.3s ease; /* Transición suave */
+    color: #00a8ff;        /* Electric Blue */
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 a:hover {
-    color: #2980b9;        /* Azul más oscuro al pasar el mouse */
-    text-decoration: underline;
+    color: #0097e6;        /* Azul un poco más oscuro */
+    text-decoration: none;
+    opacity: 0.8;
 }
 
-/* Selector de Tipo: img (Imágenes Generales) */
+/* Imágenes */
 img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 ul {
-    list-style: none; /* Elimina los bullets por defecto */
+    list-style: none;
     padding: 0;
 }
 
 /* =========================================
-   2. Selectores de Clase (Class Selectors)
-   Afectan a elementos con el atributo class="..."
+   2. Componentes (Classes)
    ========================================= */
 
 .section {
-    padding: 20px;
-    margin: 20px 0;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    padding: 60px 20px;
+    margin: 0; 
 }
 
 .container {
@@ -100,28 +98,40 @@ ul {
     padding: 0 20px;
 }
 
+/* Tarjetas Modernas */
 .card {
     background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); /* Sombra suave y difusa */
+    padding: 30px;
     margin-bottom: 20px;
-    border: 1px solid #e1e4e8;
+    border: 1px solid rgba(0,0,0,0.03); /* Borde casi invisible */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card:hover {
+    transform: translateY(-5px); /* Efecto de levitación */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* Botones */
 .btn {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
+    padding: 12px 24px;
+    background-color: #00a8ff;
     color: white;
-    border-radius: 4px;
+    border-radius: 6px;
     border: none;
     cursor: pointer;
     font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 168, 255, 0.2);
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: #0097e6;
+    transform: translateY(-1px);
 }
 
 .text-center {
@@ -129,109 +139,123 @@ ul {
 }
 
 /* =========================================
-   3. Selectores de ID (ID Selectors)
-   Afectan a un ÚNICO elemento con id="..."
+   3. Secciones Específicas (IDs)
    ========================================= */
 
+/* Hero Section con Gradiente Tecnológico */
 #hero {
-    background-color: #2c3e50;
+    background: linear-gradient(135deg, #2f3640 0%, #192a56 100%);
     color: white;
-    padding: 4rem 0;
+    padding: 6rem 0;
     text-align: center;
 }
 
 #hero h1 {
-    color: white; /* Sobrescribe el color general de h1 solo para #hero */
-    font-size: 2.5rem;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 #contact-form {
     max-width: 600px;
     margin: 0 auto;
     background: white;
-    padding: 2rem;
-    border-radius: 8px;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
 }
 
 #main-nav {
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
 }
 
 /* =========================================
-   4. Selectores Descendientes (Descendant Selectors)
-   Selecciona elementos dentro de otros
+   4. Estilos de Navegación
    ========================================= */
 
-nav ul li {
-    display: inline-block;
-    margin-left: 1rem;
-}
-
-footer p {
-    font-size: 0.9rem;
-    color: #666;
-}
-
-/* =========================================
-   5. Flexbox Layouts
-   ========================================= */
-
-/* Navegación */
 .nav-links {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     justify-content: center;
-    list-style: none; /* remove bullets */
+    list-style: none;
     padding: 0;
     margin: 0;
-    align-items: center; /* Vertical alignment */
+    align-items: center;
 }
 
-/* Resetear márgenes definidos anteriormente en selectores descendientes */
 .nav-links li {
     margin: 0;
 }
 
-/* Proyectos y Servicios */
+.nav-links a {
+    color: #ffffff; /* Enlaces blancos en el header oscuro */
+    font-weight: 500;
+    font-size: 1.05rem;
+    position: relative;
+    opacity: 0.9;
+}
+
+.nav-links a:hover {
+    color: #00a8ff;
+    opacity: 1;
+}
+
+/* =========================================
+   5. Layouts Flexbox & Grid
+   ========================================= */
+
 .projects-grid, 
 .services-grid {
     display: flex;
-    flex-wrap: wrap; /* Permitir que los elementos pasen a la siguiente línea */
-    gap: 20px;
-    justify-content: center; /* Alinear horizontalmente al centro */
+    flex-wrap: wrap;
+    gap: 30px; /* Más espacio entre tarjetas */
+    justify-content: center;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-/* Ajuste para las cards en flexbox */
 .projects-grid > li,
 .services-grid > li {
-    flex: 1 1 300px; /* Grow, shrink, basis */
-    max-width: 400px;
-    margin-bottom: 20px; /* Espacio extra abajo si hay wrap */
+    flex: 1 1 300px;
+    max-width: 380px;
+    margin-bottom: 0; /* Controlado por gap */
+}
+
+footer p {
+    font-size: 0.95rem;
+    color: #7f8fa6;
+    margin: 0;
 }
 
 /* =========================================
    6. Responsive Design
    ========================================= */
 
-@media (max-width: 600px) {
-    /* Estilos para pantallas chicas */
+@media (max-width: 768px) {
     body {
-        padding: 10px;
+        padding: 0;
     }
 
     header {
-        padding: 15px;
+        padding: 20px;
     }
 
+    /* Navegación móvil */
     .nav-links {
         flex-direction: column;
-        gap: 10px;
+        gap: 15px;
+        padding-top: 10px;
     }
-
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    .section {
+        padding: 40px 20px;
+    }
+    
     img {
         max-width: 100%;
         height: auto;
