@@ -164,3 +164,43 @@ footer p {
     font-size: 0.9rem;
     color: #666;
 }
+
+/* =========================================
+   5. Flexbox Layouts
+   ========================================= */
+
+/* Navegación */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    list-style: none; /* remove bullets */
+    padding: 0;
+    margin: 0;
+    align-items: center; /* Vertical alignment */
+}
+
+/* Resetear márgenes definidos anteriormente en selectores descendientes */
+.nav-links li {
+    margin: 0;
+}
+
+/* Proyectos y Servicios */
+.projects-grid, 
+.services-grid {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos pasen a la siguiente línea */
+    gap: 20px;
+    justify-content: center; /* Alinear horizontalmente al centro */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Ajuste para las cards en flexbox */
+.projects-grid > li,
+.services-grid > li {
+    flex: 1 1 300px; /* Grow, shrink, basis */
+    max-width: 400px;
+    margin-bottom: 20px; /* Espacio extra abajo si hay wrap */
+}
