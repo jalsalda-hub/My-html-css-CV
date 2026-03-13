@@ -204,3 +204,28 @@ footer p {
     max-width: 400px;
     margin-bottom: 20px; /* Espacio extra abajo si hay wrap */
 }
+
+/* =========================================
+   6. Responsive Design
+   ========================================= */
+
+@media (max-width: 600px) {
+    /* Estilos para pantallas chicas */
+    body {
+        padding: 10px;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
