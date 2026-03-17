@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="light">
+<html lang="es" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,18 +13,16 @@
     
     <!-- Styles -->
     <link rel="stylesheet" href="src/css/main.css">
-    <!-- MDN/web.dev Practice Styles -->
-    <link rel="stylesheet" href="styles.css">
     
     <!-- FontAwesome (Optional, using CDN for now) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
-    <header style="position: sticky; top: 0; background-color: var(--background-color); z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
-        <div class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem;">
+    <header>
+        <div class="container" style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 0;">
             <div class="logo">
-                <h1 style="font-size: 1.5rem; margin: 0;">Dev<span style="color: var(--secondary-color);">Industrial</span></h1>
+                <h1 style="font-size: 1.5rem; margin: 0; background: none; -webkit-text-fill-color: initial; color: var(--text-primary);">Dev<span style="color: var(--primary-color);">Industrial</span></h1>
             </div>
             <nav aria-label="Main Navigation">
                 <ul class="nav-links">
@@ -36,7 +34,7 @@
                 </ul>
             </nav>
             <div class="controls">
-                <button id="theme-toggle" class="btn" style="background: transparent; color: var(--text-primary); border: 1px solid var(--border-color);">
+                <button id="theme-toggle" class="btn btn-outline" style="border-radius: 50%; width: 40px; height: 40px; padding: 0;">
                     <i class="fas fa-moon"></i>
                 </button>
                 <select id="lang-select" style="padding: 0.5rem;">
@@ -52,13 +50,13 @@
         <section id="hero" class="section" aria-labelledby="hero-title">
             <div class="container hero-container">
                 <div class="hero-content">
-                    <span class="hero-badge">FullStack + Supply Chain</span>
-                    <h1 id="hero-title" data-i18n="hero_title">Ingeniería Industrial + Desarrollo FullStack</h1>
-                    <p data-i18n="hero_subtitle">Optimizando procesos de manufactura y logística a través de soluciones tecnológicas modernas.</p>
+                    <span class="hero-badge">Ingeniero Industrial & FullStack Dev</span>
+                    <h1 id="hero-title" data-i18n="hero_title">Estrategia Operativa & Soluciones Digitales</h1>
+                    <p data-i18n="hero_subtitle">Fusiono 15+ años liderando cadenas de suministro globales con el desarrollo de software moderno. Transformo operaciones complejas mediante tecnología B2B/B2C, IA y plataformas a medida.</p>
                     <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary" data-i18n="hero_cta">Ver Casos de Estudio</a>
+                        <a href="#projects" class="btn btn-primary" data-i18n="hero_cta">Ver Portafolio</a>
                         <a href="src/assets/documents/cv.pdf" class="btn btn-outline" download>
-                            <i class="fas fa-file-download"></i> CV
+                            <i class="fas fa-file-download"></i> Descargar CV
                         </a>
                     </div>
                 </div>
@@ -66,16 +64,22 @@
         </section>
 
         <!-- About Section -->
-        <section id="about" class="section" style="background-color: var(--surface-color);" aria-labelledby="about-title">
+        <section id="about" class="section" aria-labelledby="about-title">
             <div class="container about-container">
                 <div class="about-text">
-                    <h2 id="about-title" data-i18n="about_title">Sobre Mí</h2>
-                    <p data-i18n="about_text" class="lead-text">Experto en la intersección de la tecnología y la industria. Aporto una visión única que combina metodologías de desarrollo de software con principios de Lean Manufacturing y Supply Chain Management.</p>
+                    <h2 id="about-title" data-i18n="about_title">Perfil Profesional</h2>
+                    <p data-i18n="about_text" class="lead-text">
+                        Ingeniero Industrial Bilingüe y MBA con sólida trayectoria liderando operaciones de manufactura y supply chain en LatAm y EE.UU. He gestionado equipos de +400 personas y operaciones de +US$400M. 
+                        <br><br>
+                        Mi valor único radica en la capacidad de traducir estrategias operativas complejas en soluciones tecnológicas escalables. Desde la optimización logística con IA hasta el desarrollo de plataformas AgriTech y Fintech, combino la visión de negocio con la ejecución técnica FullStack.
+                    </p>
                     <ul class="skills-list">
-                        <li class="skill-tag">Supply Chain</li>
-                        <li class="skill-tag">Logistics</li>
-                        <li class="skill-tag">Process Optimization</li>
-                        <li class="skill-tag">Web Development</li>
+                        <li class="skill-tag">Supply Chain 4.0</li>
+                        <li class="skill-tag">FullStack Dev</li>
+                        <li class="skill-tag">AI/ML Operations</li>
+                        <li class="skill-tag">Lean Manufacturing</li>
+                        <li class="skill-tag">Ecommerce Strategies</li>
+                        <li class="skill-tag">Global Logistics</li>
                     </ul>
                     <div class="social-links-area" style="margin-top: 1.5rem;">
                         <a href="https://www.linkedin.com/in/jaimelondonos/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn Profile of Jaime Londoño">
@@ -97,8 +101,8 @@
                                 alt="Jaime Londoño - FullStack Developer & Industrial Engineer"
                                 class="profile-img"
                                 loading="lazy"
-                                width="400"
-                                height="400"
+                                width="350"
+                                height="350"
                                 onerror="this.onerror=null; this.parentElement.innerHTML='<div class=\'profile-placeholder\'><i class=\'fas fa-user-tie\'></i></div>';"
                             >
                         </picture>
@@ -110,24 +114,24 @@
         <!-- Services Section -->
         <section id="services" class="section" aria-labelledby="services-title">
             <div class="container">
-                <h2 id="services-title" data-i18n="services_title">Servicios</h2>
+                <h2 id="services-title" data-i18n="services_title">Expertise Híbrido</h2>
                 <ul class="services-grid">
                     <li>
-                        <article class="card" style="padding: 1rem; border: 1px solid var(--border-color); border-radius: 4px;">
-                            <h3 data-i18n="service_1_title">Consultoría Tecnológica Industrial</h3>
-                            <p data-i18n="service_1_desc">Digitalización de procesos productivos.</p>
+                        <article class="card">
+                            <h3 data-i18n="service_1_title"><i class="fas fa-industry" style="color: var(--primary-color);"></i> Operaciones & Supply Chain</h3>
+                            <p data-i18n="service_1_desc">Optimización E2E, S&OP, Logística Internacional (LatAm/USA), Diseño de Redes de Distribución y Lean Manufacturing.</p>
                         </article>
                     </li>
                     <li>
-                        <article class="card" style="padding: 1rem; border: 1px solid var(--border-color); border-radius: 4px;">
-                            <h3 data-i18n="service_2_title">Desarrollo FullStack</h3>
-                            <p data-i18n="service_2_desc">Aplicaciones web a medida para logística y ecommerce.</p>
+                        <article class="card">
+                            <h3 data-i18n="service_2_title"><i class="fas fa-code-branch" style="color: var(--secondary-color);"></i> Desarrollo FullStack</h3>
+                            <p data-i18n="service_2_desc">Arquitectura de software para plataformas B2B/B2C. Integración de CRM, WMS personalizados y automatización de procesos.</p>
                         </article>
                     </li>
                     <li>
-                        <article class="card" style="padding: 1rem; border: 1px solid var(--border-color); border-radius: 4px;">
-                            <h3 data-i18n="service_3_title">Optimización Ecommerce</h3>
-                            <p data-i18n="service_3_desc">Estrategias de venta online y marketing digital técnico.</p>
+                        <article class="card">
+                            <h3 data-i18n="service_3_title"><i class="fas fa-chart-line" style="color: var(--tech-cyan);"></i> Transformación Digital</h3>
+                            <p data-i18n="service_3_desc">Implementación de IA/ML para pronósticos (+20% precisión), soluciones AgriTech y estrategias de crecimiento Ecommerce/Fintech.</p>
                         </article>
                     </li>
                 </ul>
@@ -135,52 +139,90 @@
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="section" style="background-color: var(--surface-color);" aria-labelledby="projects-title">
+        <section id="projects" class="section" aria-labelledby="projects-title">
             <div class="container">
-                <h2 id="projects-title" data-i18n="projects_title">Casos de Estudio</h2>
+                <h2 id="projects-title" data-i18n="projects_title">Trayectoria & Proyectos</h2>
                 <ul class="projects-grid">
-                    <!-- Project 1 -->
+                    <!-- Project: Strategic Consulting -->
                     <li>
                         <article class="card project-card">
                             <div class="card-header">
-                                <div class="project-icon"><i class="fas fa-network-wired"></i></div>
-                                <span class="project-category">Supply Chain</span>
+                                <div class="project-icon"><i class="fas fa-drafting-compass"></i></div>
+                                <span class="project-category">Strategic Consulting</span>
                             </div>
                             <div class="card-body">
-                                <!-- Semantic update: Strong for importance, Em for emphasis -->
-                                <strong data-i18n="project_1_title" style="display: block; font-size: 1.4rem; margin-bottom: 0.5rem; color: var(--primary-color);">Consultor Sr. en Supply Chain/Operaciones</strong>
-                                <em data-i18n="project_1_desc" style="display: block; margin-bottom: 1rem; color: var(--text-primary);">Diseño de la red de distribución...</em>
+                                <strong style="display: block; font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-primary);">Diseño de Redes & Optimización Operativa</strong>
+                                <em style="display: block; margin-bottom: 1rem; color: var(--text-secondary);">Soluciones de consultoría para reingeniería de procesos logísticos. Diseño de redes de distribución y modelos de optimización de costos para entornos industriales complejos.</em>
                             </div>
                             <div class="card-footer">
                                 <ul class="tech-tags">
                                     <li>Network Design</li>
-                                    <li>Logistics</li>
-                                    <li>Cost Optimization</li>
+                                    <li>Process Eng.</li>
+                                    <li>Cost Opt.</li>
                                 </ul>
-                                <a href="#" class="btn-link">Ver Detalles &rarr;</a>
                             </div>
                         </article>
                     </li>
-                    
-                    <!-- Project 2 -->
+
+                    <!-- Project 1: Landers -->
                     <li>
                         <article class="card project-card">
-                             <div class="card-header">
+                            <div class="card-header">
                                 <div class="project-icon"><i class="fas fa-robot"></i></div>
-                                <span class="project-category">Automation</span>
+                                <span class="project-category">Smart Logistics</span>
                             </div>
                             <div class="card-body">
-                                <!-- Semantic update: Strong for importance, Em for emphasis -->
-                                <strong data-i18n="project_2_title" style="display: block; font-size: 1.4rem; margin-bottom: 0.5rem; color: var(--primary-color);">Director de Logística | Supply Chain Manager</strong>
-                                <em data-i18n="project_2_desc" style="display: block; margin-bottom: 1rem; color: var(--text-primary);">Reconocido por NetLogistik...</em>
+                                <strong data-i18n="project_1_title" style="display: block; font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-primary);">Supply Chain Automation (Landers)</strong>
+                                <em data-i18n="project_1_desc" style="display: block; margin-bottom: 1rem; color: var(--text-secondary);">Reconocido por NetLogistik Blue Yonder como el Proceso de Supply Chain tecnológicamente más integrado (Abastecimiento, Inventarios, Fullfillment, Distribución y Transporte) entre 650 compañías similares, logrando +35% eficiencia y reducción de costos operativos (-18%).</em>
                             </div>
                             <div class="card-footer">
                                 <ul class="tech-tags">
                                     <li>AI/ML</li>
+                                    <li>WMS</li>
                                     <li>S&OP</li>
-                                    <li>Automation</li>
                                 </ul>
-                                <a href="#" class="btn-link">Ver Detalles &rarr;</a>
+                            </div>
+                        </article>
+                    </li>
+                    
+                    <!-- Project 2: AgriTech -->
+                    <li>
+                        <article class="card project-card">
+                             <div class="card-header">
+                                <div class="project-icon"><i class="fas fa-leaf"></i></div>
+                                <span class="project-category">AgriTech Development</span>
+                            </div>
+                            <div class="card-body">
+                                <strong data-i18n="project_2_title" style="display: block; font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-primary);">Plataforma Gestión de Cultivos</strong>
+                                <em data-i18n="project_2_desc" style="display: block; margin-bottom: 1rem; color: var(--text-secondary);">Desarrollo de sistema integral para administración agrícola (Precisagro). Logística de 400k toneladas y optimización de despachos (+40%).</em>
+                            </div>
+                            <div class="card-footer">
+                                <ul class="tech-tags">
+                                    <li>FullStack</li>
+                                    <li>Logistics Logic</li>
+                                    <li>Dashboarding</li>
+                                </ul>
+                            </div>
+                        </article>
+                    </li>
+
+                    <!-- Project 3: Ecommerce & Fintech -->
+                    <li>
+                        <article class="card project-card">
+                             <div class="card-header">
+                                <div class="project-icon"><i class="fas fa-laptop-code"></i></div>
+                                <span class="project-category">Web Solutions</span>
+                            </div>
+                            <div class="card-body">
+                                <strong data-i18n="project_3_title" style="display: block; font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-primary);">B2B/B2C & Fintech Platforms</strong>
+                                <em data-i18n="project_3_desc" style="display: block; margin-bottom: 1rem; color: var(--text-secondary);">Desarrollo de "Lub-App", Ecommerce sector Moda y soluciones Fintech. Integración de CRMs y pasarelas de pago.</em>
+                            </div>
+                            <div class="card-footer">
+                                <ul class="tech-tags">
+                                    <li>React/Node</li>
+                                    <li>CRM API</li>
+                                    <li>Fintech</li>
+                                </ul>
                             </div>
                         </article>
                     </li>
@@ -192,12 +234,12 @@
         <section id="blog" class="section" aria-labelledby="blog-title">
             <div class="container">
                 <h2 id="blog-title" data-i18n="blog_title">Blog Técnico</h2>
-                <ul class="blog-grid">
+                <ul class="blog-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; list-style: none; padding: 0;">
                     <li>
                         <article class="card">
                             <h3>Optimización de la Cadena de Suministro con IA</h3>
                             <p style="margin: 1rem 0;">Cómo la inteligencia artificial está transformando la predicción de demanda en manufactura.</p>
-                            <a href="#" style="color: var(--secondary-color); font-weight: bold;">Leer más &rarr;</a>
+                            <a href="#" class="btn-link">Leer más &rarr;</a>
                         </article>
                     </li>
                 </ul>
@@ -207,32 +249,35 @@
         <!-- Contact Section -->
         <section id="contact" class="section">
             <div class="container">
-                <h2 data-i18n="contact_title">Contacto</h2>
-                <form id="contact-form" style="max-width: 600px; margin: 0 auto;">
+                <h2 data-i18n="contact_title">Contacto & Consultoría</h2>
+                <p style="text-align: center; margin-bottom: 2rem; color: var(--text-secondary); max-width: 600px; margin-left: auto; margin-right: auto;">
+                    Agenda una sesión para optimizar tus operaciones logísticas o escalar tus plataformas digitales.
+                </p>
+                <form id="contact-form" style="max-width: 600px; margin: 0 auto; background: var(--surface-color); padding: 2rem; border-radius: var(--border-radius); border: 1px solid var(--border-color);">
                     <div style="margin-bottom: 1rem;">
-                        <label for="name" data-i18n="contact_name">Nombre</label>
-                        <input type="text" id="name" name="name" style="width: 100%; padding: 0.5rem; margin-top: 0.5rem;">
+                        <label for="name" data-i18n="contact_name" style="display: block; margin-bottom: 0.5rem; color: var(--text-secondary);">Nombre</label>
+                        <input type="text" id="name" name="name" style="width: 100%; padding: 0.75rem; background: var(--background-color); border: 1px solid var(--border-color); color: var(--text-primary); border-radius: 4px;">
                     </div>
                     <div style="margin-bottom: 1rem;">
-                        <label for="email" data-i18n="contact_email">Email</label>
-                        <input type="email" id="email" name="email" style="width: 100%; padding: 0.5rem; margin-top: 0.5rem;">
+                        <label for="email" data-i18n="contact_email" style="display: block; margin-bottom: 0.5rem; color: var(--text-secondary);">Email</label>
+                        <input type="email" id="email" name="email" style="width: 100%; padding: 0.75rem; background: var(--background-color); border: 1px solid var(--border-color); color: var(--text-primary); border-radius: 4px;">
                     </div>
                     <div style="margin-bottom: 1rem;">
-                        <label for="message" data-i18n="contact_message">Mensaje</label>
-                        <textarea id="message" name="message" rows="5" style="width: 100%; padding: 0.5rem; margin-top: 0.5rem;"></textarea>
+                        <label for="message" data-i18n="contact_message" style="display: block; margin-bottom: 0.5rem; color: var(--text-secondary);">Mensaje</label>
+                        <textarea id="message" name="message" rows="5" style="width: 100%; padding: 0.75rem; background: var(--background-color); border: 1px solid var(--border-color); color: var(--text-primary); border-radius: 4px;"></textarea>
                     </div>
-                    <button type="submit" class="btn" data-i18n="contact_submit">Enviar Mensaje</button>
+                    <button type="submit" class="btn btn-primary" data-i18n="contact_submit" style="width: 100%;">Enviar Mensaje</button>
                 </form>
             </div>
         </section>
     </main>
 
-    <footer role="contentinfo" style="background-color: var(--primary-color); color: #fff; padding: 2rem 0; text-align: center;">
+    <footer role="contentinfo" style="padding: 2rem 0; text-align: center;">
         <div class="container">
-            <p>&copy; 2026 DevIndustrial. Todos los derechos reservados.</p>
+            <p>&copy; 2025 Jaime Londoño. Todos los derechos reservados.</p>
             <ul class="social-links" style="list-style: none; margin: 1rem 0 0; padding: 0; display: flex; justify-content: center; gap: 1rem;">
-                <li><a href="https://www.linkedin.com/in/jaimelondonos/" target="_blank" rel="noopener noreferrer" style="color: #fff; font-size: 1.5rem;" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://github.com/jalsalda-hub/" target="_blank" rel="noopener noreferrer" style="color: #fff; font-size: 1.5rem;" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/jaimelondonos/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="https://github.com/jalsalda-hub/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
             </ul>
         </div>
     </footer>

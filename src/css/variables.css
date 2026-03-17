@@ -1,41 +1,75 @@
 :root {
-    /* Colors - Light Mode (Default) */
-    --primary-color: #2c3e50;
-    --secondary-color: #e67e22;
-    --background-color: #f8f9fa;
-    --surface-color: #ffffff;
-    --text-primary: #333333;
-    --text-secondary: #666666;
-    --border-color: #dddddd;
+    /* --- Modern Tech Palette --- */
+    
+    /* Core Hues */
+    --tech-dark: #0f172a;        /* Slate 900 */
+    --tech-darker: #020617;      /* Slate 950 */
+    --tech-blue: #0ea5e9;        /* Sky 500 */
+    --tech-cyan: #06b6d4;        /* Cyan 500 */
+    --tech-purple: #8b5cf6;      /* Violet 500 */
+    --tech-emerald: #10b981;     /* Emerald 500 */
+    --tech-white: #f8fafc;       /* Slate 50 */
+    --tech-gray: #94a3b8;        /* Slate 400 */
+
+    /* Theme Variables - Default (Dark Tech Focus) */
+    --primary-color: var(--tech-cyan);
+    --primary-hover: var(--tech-blue);
+    --secondary-color: var(--tech-purple);
+    
+    --background-color: var(--tech-darker);
+    --background-gradient: linear-gradient(to bottom right, #020617, #1e293b);
+    
+    --surface-color: rgba(30, 41, 59, 0.7); /* Slightly transparent for glassmorphism */
+    --surface-solid: #1e293b;
+    
+    --text-primary: var(--tech-white);
+    --text-secondary: var(--tech-gray);
+    --border-color: rgba(148, 163, 184, 0.2); 
+
+    /* Gradients */
+    --gradient-text: linear-gradient(135deg, var(--tech-cyan) 0%, var(--tech-purple) 100%);
+    --gradient-glow: radial-gradient(circle at center, rgba(6, 182, 212, 0.15) 0%, transparent 70%);
 
     /* Typography */
-    --font-heading: 'Montserrat', 'Roboto Slab', sans-serif;
-    --font-body: 'Open Sans', 'Inter', sans-serif;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Inter', sans-serif;
     --font-code: 'Fira Code', monospace;
 
     /* Spacing */
-    --spacing-xs: 0.25rem;
-    --spacing-sm: 0.5rem;
-    --spacing-md: 1rem;
-    --spacing-lg: 2rem;
-    --spacing-xl: 4rem;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 6rem;
 
-    /* Layout */
+    /* Layout & Effects */
     --container-width: 1200px;
-    --border-radius: 4px; /* Industrial feel - slight round */
-    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    --transition-speed: 0.3s;
+    --border-radius: 12px;
+    
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --shadow-glow: 0 0 20px rgba(6, 182, 212, 0.3);
+    
+    --backdrop-blur: blur(12px);
+    --transition-speed: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Dark Mode Override */
-[data-theme="dark"] {
-    --primary-color: #ecf0f1; /* Light text for headings/primary in dark mode */
-    --primary-bg: #34495e; /* Use for cards/surfaces */
-    --secondary-color: #d35400;
-    --background-color: #1a1a1a;
-    --surface-color: #2c3e50;
-    --text-primary: #ecf0f1;
-    --text-secondary: #bdc3c7;
-    --border-color: #444444;
-    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+/* Light Mode Override (Clean Modern) */
+[data-theme="light"] {
+    --primary-color: #0284c7;    /* Sky 600 */
+    --primary-hover: #0369a1;    /* Sky 700 */
+    --secondary-color: #7c3aed;  /* Violet 600 */
+    
+    --background-color: #f8fafc;
+    --background-gradient: linear-gradient(to bottom right, #f8fafc, #e2e8f0);
+    
+    --surface-color: rgba(255, 255, 255, 0.8);
+    --surface-solid: #ffffff;
+    
+    --text-primary: #0f172a;
+    --text-secondary: #475467;
+    --border-color: #e2e8f0;
+    
+    --shadow-glow: 0 4px 20px rgba(2, 132, 199, 0.15);
 }
